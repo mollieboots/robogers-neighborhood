@@ -1,0 +1,14 @@
+.header {
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.header .container {
+    padding: 40px 15px;
+    background: url("../img/mister-rogers-sweater.png") no-repeat right;
+    background-size: contain;
+}
+
+#output {
+    margin-top: 20px;
+}
