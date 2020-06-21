@@ -4,6 +4,7 @@
 <head>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -20,7 +21,9 @@
         <form id="user-input">
             <div class="form-group">
                 <label for="input-number">Enter a number:</label>
-                <input class="form-control" type="number" id="input-number">
+                <input class="form-control" required="true" type="number" id="input-number">
+                <label for="input-name">Enter your name:</label>
+                <input class="form-control" required="true" type="text" id="input-name">
             </div>
             <button type="submit" class="btn btn-success">Show it to me, friend!</button>
         </form>

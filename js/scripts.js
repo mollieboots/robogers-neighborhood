@@ -10,23 +10,23 @@ let createArray = function(input) {
     }
 }
 
-let parseNum = function(inputNumber) {
+let parseNum = function(inputNumber, inputName) {
     if ( inputNumber.toString().indexOf('3') > -1 ) {
-        return "Won't you be my neighbor?";
+        return " Won't you be my neighbor, " + inputName + "?";
     } else if ( inputNumber.toString().indexOf('2') > -1 ) {
-        return "Boop!";
+        return " Boop!";
     } else if ( inputNumber.toString().indexOf('1') > -1 ) {
-        return "Beep!";
+        return " Beep!";
     } else {
-        return inputNumber;
+        return " " + inputNumber;
     }
 }
 
-let robogersNeighborhood = function(inputNumber) {
+let robogersNeighborhood = function(inputNumber, inputName) {
     let integerArray = createArray(inputNumber);
     let resultsArray = [];
     integerArray.forEach(function(index) {
-        resultsArray.push(parseNum(integerArray[index]));
+        resultsArray.push(parseNum(integerArray[index], inputName));
     })
     return resultsArray;
 }
@@ -35,8 +35,9 @@ $(document).ready(function() {
     $("#user-input").submit(function(event) {
         event.preventDefault();
         let inputNumber = $("#input-number").val();
-        $("#input-number").val("");
-        let result = robogersNeighborhood(inputNumber);
+        let inputName = $("#input-name").val();
+        $(".form-control").val("");
+        let result = robogersNeighborhood(inputNumber, inputName);
 
         $("#output").text(result);
     });
