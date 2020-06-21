@@ -24,10 +24,13 @@ Expected output: 0, 1, "Boop!", "Won't you be my neighbor?", 4, 5
 *Input:* 5
 Expected output: 0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5
 
+**The program should recieve the user's name input and should add it to the numeral 3 output**
+*Input:* 5
+Expected output: 0, "Beep!", "Boop!", "Won't you be my neighbor, **Name**?", 4, 5
+
 **The program should detect if the inputted number is a positive or negative number and return an error message if negative**
 *Input:* -1
 Expected output: "Sorry! Please enter a positive non-zero number."
-
 
 ## Authors
 
