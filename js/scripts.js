@@ -27,7 +27,6 @@ let robogersNeighborhood = function(inputNumber) {
     let resultsArray = [];
     integerArray.forEach(function(index) {
         resultsArray.push(parseNum(integerArray[index]));
-        // console.log(parseNum(integerArray[index]));
     })
     return resultsArray;
 }
@@ -42,16 +41,3 @@ $(document).ready(function() {
         $("#output").text(result);
     });
 });
-
-// window.onLoad = function() {
-    
-    // var form_el = document.getElementById("#user-input");
-    
-    // form_el.addEventListener("submit", function(event) {
-    //     event.preventDefault();
-    //     var inputNumber = document.getElementById("input-number");
-    //     console.log(inputNumber, "made it");
-        
-    //     createArray(inputNumber);
-    // });
-// };
